@@ -9,11 +9,13 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Divider
+import androidx.compose.material3.Button
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -27,6 +29,7 @@ import java.io.InputStreamReader
 class MainActivity : ComponentActivity() {
 
     private var menuList: List<Menu> = listOf()
+    private var selectedMenus = mutableStateOf("")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,15 +45,17 @@ class MainActivity : ComponentActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.Center
                     ) {
-                        val jsonArr = calc(menuList)
                         Text(
-                            text = "サイゼリヤN円ガチャ",
+                            text = "サイゼリヤ1000円ガチャ",
                             modifier = Modifier
                         )
                         Spacer(modifier = Modifier.padding(4.dp))
-                        Divider()
-                        DisplayResult(jsonArr)
-//                        DisplayButton(this@MainActivity, selectedList.value.toMutableList())
+                        HorizontalDivider()
+                        DisplayResult(selectedMenus.value)
+                        Spacer(modifier = Modifier.padding(4.dp))
+                        Button(onClick = { selectedMenus.value = calc(menuList) }) {
+                            Text("ガチャを引く")
+                        }
                     }
                 }
             }
@@ -99,23 +104,24 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun DisplayResult(
-    jsonArr : String) {
-    val selectedList = Json.decodeFromString<List<Menu>>(jsonArr)
-    if (selectedList.isEmpty()) {
+fun DisplayResult(jsonArr : String) {
+    if (jsonArr.isBlank()) {
+        Spacer(modifier = Modifier.padding(4.dp))
         Text(
-            text = "No selection yet",
+            text = "ボタンを押してね！！",
         )
+        Spacer(modifier = Modifier.padding(4.dp))
+        HorizontalDivider()
     } else {
+        val selectedList = Json.decodeFromString<List<Menu>>(jsonArr)
         for (menu in selectedList) {
-            println(menu.name)
             CardList(menu)
         }
+        Spacer(modifier = Modifier.padding(4.dp))
+        Text("合計 ${selectedList.sumOf { it.value }} 円")
+        Spacer(modifier = Modifier.padding(4.dp))
+        HorizontalDivider()
     }
-    Spacer(modifier = Modifier.padding(4.dp))
-    Text("合計 ${selectedList.sumOf { it.value }} 円")
-    Spacer(modifier = Modifier.padding(4.dp))
-    Divider()
 }
 
 @Composable
@@ -134,5 +140,5 @@ fun CardList(menu: Menu) {
             modifier = Modifier.fillMaxWidth()
         )
     }
-    Divider()
+    HorizontalDivider()
 }
