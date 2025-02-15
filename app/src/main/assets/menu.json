@@ -12,18 +12,6 @@
         "category": "salad"
     },
     {
-        "id": 1207,
-        "name": "モッツァレラのサラダ",
-        "value": 350,
-        "category": "salad"
-    },
-    {
-        "id": 1208,
-        "name": "グリーンサラダ",
-        "value": 350,
-        "category": "salad"
-    },
-    {
         "id": 1209,
         "name": "チキンのサラダ",
         "value": 350,
@@ -85,7 +73,7 @@
     },
     {
         "id": 1407,
-        "name": "チョリソー(辛味ソーセージ)",
+        "name": "チョリソー",
         "value": 400,
         "category": "appetizer"
     },
@@ -102,27 +90,15 @@
         "category": "appetizer"
     },
     {
-        "id": 1411,
-        "name": "アスパラガスの温サラダ",
-        "value": 300,
-        "category": "appetizer"
-    },
-    {
         "id": 1413,
-        "name": "爽やかにんじんサラダ",
+        "name": "キャロットラペ",
         "value": 200,
         "category": "appetizer"
     },
     {
-        "id": 1414,
-        "name": "モッツァレラトマト",
-        "value": 280,
-        "category": "appetizer"
-    },
-    {
-        "id": 1415,
-        "name": "カリッとポテト",
-        "value": 280,
+        "id": 1417,
+        "name": "バッファローモッツァレラのカプレーゼ",
+        "value": 430,
         "category": "appetizer"
     },
     {
@@ -140,6 +116,12 @@
     {
         "id": 1425,
         "name": "柔らか青豆の温サラダ",
+        "value": 200,
+        "category": "appetizer"
+    },
+    {
+        "id": 1435,
+        "name": "スイートコーン",
         "value": 200,
         "category": "appetizer"
     },
@@ -162,33 +144,27 @@
         "category": "doria"
     },
     {
-        "id": 2106,
-        "name": "タラコとエビのドリア",
-        "value": 400,
-        "category": "doria"
-    },
-    {
         "id": 2108,
         "name": "焼きチーズ ミラノ風ドリア",
         "value": 350,
         "category": "doria"
     },
     {
-        "id": 2109,
-        "name": "エビとタラコのクリームグラタン(全粒粉)",
+        "id": 2110,
+        "name": "タラコとポップコーンシュリンプのドリア",
+        "value": 400,
+        "category": "doria"
+    },
+    {
+        "id": 2115,
+        "name": "ポップコーンシュリンプとタラコのクリームグラタン（全粒粉）",
         "value": 430,
         "category": "doria"
     },
     {
-        "id": 2201,
-        "name": "マルゲリータピザ",
+        "id": 2203,
+        "name": "バッファローモッツァレラのマルゲリータピザ",
         "value": 400,
-        "category": "pizza"
-    },
-    {
-        "id": 2202,
-        "name": "バッファローモッツァレラのピザ",
-        "value": 500,
         "category": "pizza"
     },
     {
@@ -210,57 +186,15 @@
         "category": "pizza"
     },
     {
-        "id": 2251,
-        "name": "マルゲリータピザ Wチーズ",
-        "value": 500,
-        "category": "pizza"
-    },
-    {
-        "id": 2252,
-        "name": "バッファローモッツァレラのピザ Wチーズ",
-        "value": 600,
-        "category": "pizza"
-    },
-    {
-        "id": 2254,
-        "name": "野菜ときのこのピザ Wチーズ",
-        "value": 500,
-        "category": "pizza"
-    },
-    {
-        "id": 2256,
-        "name": "たっぷりコーンのピザ Wチーズ",
-        "value": 500,
-        "category": "pizza"
-    },
-    {
-        "id": 2258,
-        "name": "ソーセージピザ Wチーズ",
-        "value": 500,
-        "category": "pizza"
-    },
-    {
         "id": 2301,
         "name": "タラコソースシシリー風",
         "value": 400,
         "category": "pasta"
     },
     {
-        "id": 2303,
-        "name": "ペペロンチーノ",
-        "value": 300,
-        "category": "pasta"
-    },
-    {
         "id": 2304,
         "name": "バルマ風スパゲッティ",
         "value": 400,
-        "category": "pasta"
-    },
-    {
-        "id": 2305,
-        "name": "カルボナーラ",
-        "value": 500,
         "category": "pasta"
     },
     {
@@ -273,12 +207,6 @@
         "id": 2310,
         "name": "スープ入り塩味ボンゴレ",
         "value": 500,
-        "category": "pasta"
-    },
-    {
-        "id": 2315,
-        "name": "イタリア野菜のトマトスパゲッティ",
-        "value": 540,
         "category": "pasta"
     },
     {
@@ -321,43 +249,43 @@
         "id": 2402,
         "name": "若鶏のディアボラ風",
         "value": 500,
-        "category": "chicken"
+        "category": "meat"
     },
     {
         "id": 2403,
         "name": "イタリアンハンバーグ",
         "value": 500,
-        "category": "hamburg"
+        "category": "meat"
     },
     {
         "id": 2404,
         "name": "柔らかチキンのチーズ焼き",
         "value": 500,
-        "category": "chicken"
+        "category": "meat"
     },
     {
         "id": 2406,
         "name": "ハンバーグステーキ",
         "value": 400,
-        "category": "hamburg"
+        "category": "meat"
     },
     {
         "id": 2407,
         "name": "ディアボラ風ハンバーグ",
         "value": 500,
-        "category": "hamburg"
+        "category": "meat"
     },
     {
         "id": 2413,
-        "name": "ラムと野菜のグリル",
+        "name": "ラム(仔羊)と野菜のグリル",
         "value": 870,
-        "category": "lamp"
+        "category": "meat"
     },
     {
         "id": 2418,
         "name": "チョリソーとハンバーグの盛合せ",
         "value": 550,
-        "category": "hamburg"
+        "category": "meat"
     },
     {
         "id": 3101,
@@ -378,26 +306,20 @@
         "category": "rice"
     },
     {
-        "id": 3104,
-        "name": "シナモンプチフォッカ",
+        "id": 3110,
+        "name": "フォッカチオ",
+        "value": 150,
+        "category": "bread"
+    },
+    {
+        "id": 3111,
+        "name": "ガーリックフォッカチオ",
         "value": 200,
         "category": "bread"
     },
     {
-        "id": 3106,
-        "name": "プチフォッカ",
-        "value": 150,
-        "category": "bread"
-    },
-    {
-        "id": 3108,
-        "name": "ミニフィセル",
-        "value": 150,
-        "category": "bread"
-    },
-    {
-        "id": 3109,
-        "name": "ガーリックトースト",
+        "id": 3112,
+        "name": "シナモンフォッカチオ",
         "value": 200,
         "category": "bread"
     },
@@ -408,14 +330,8 @@
         "category": "dessert"
     },
     {
-        "id": 3204,
-        "name": "ジェラート&シナモンプチフォッカ",
-        "value": 450,
-        "category": "dessert"
-    },
-    {
         "id": 3205,
-        "name": "イタリアンジェラート",
+        "name": "ミルクジェラート",
         "value": 250,
         "category": "dessert"
     },
@@ -441,6 +357,12 @@
         "id": 3213,
         "name": "トリフアイスクリーム",
         "value": 350,
+        "category": "dessert"
+    },
+    {
+        "id": 3214,
+        "name": "ジェラート&シナモンフォッカチオ",
+        "value": 450,
         "category": "dessert"
     },
     {
